@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>AEJ Website</title>
+    <link rel="icon" href="aej.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="aej">
+        <img class="aejpic" src="aej.png" alt="aej">
+    </div>
+
+    <div class="midcon">
+        <div class="title-container">
+            <h1>We are Aspiring Programmers!</h1>
+        </div>
+        <div class="image-container">
+            <div class="image-with-text">
+                <img class="pic" src="edrian.jpg" alt="Left Image" class="aejpic">
+                <p>Edrian N. Aluan</p>
+                <button id="Edrian">Go to Edrian's Page</button>
+            </div>
+            <div class="image-with-text">
+                <img class="pic" src="justin.jpg" alt="Center Image" class="aejpic">
+                <p>Justin Oliver Gagasa</p>
+                <button id="Justin">Go to Justin's Page</button>
+            </div>
+            <div class="image-with-text">
+                <img class="pic" src="ad.jpg" alt="Right Image" class="aejpic">
+                <p>Adrian A. Giliw</p>
+                <button id="Adrian">Go to Adrian's Page</button>
+            </div>
+        </div>
+        <div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+         
+      </div>
+    </div>
+
+
+    <button id="index2">Manwha Recommendations</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const EdrianButton = document.getElementById("Edrian");
+
+    if (EdrianButton) {
+        EdrianButton.addEventListener("click", function() {
+            window.location.href = "Edrian.html";
+        });
+    }
+});
+
+    </script>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const AdrianButton = document.getElementById("Adrian");
+
+    if (AdrianButton) {
+        AdrianButton.addEventListener("click", function() {
+            window.location.href = "Adrian.html";
+        });
+    }
+});
+
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const index2Button=document.getElementById("index2");
+    if(index2Button){
+    index2Button.addEventListener("click", function() {
+    window.location.href="index2.html";
+    });
+    }
+    });
+  </script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const JustinButton=document.getElementById("Justin");
+        if(JustinButton){
+            JustinButton.addEventListener("click", function(){
+                window.location.href="Justin.html";
+            
+            });
+        }
+    });
+</script>
+    <footer>
+        <div class="credits">
+            <p style="font-family: Georgia, 'Times New Roman', Times, serif;">&copy; AEJ Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

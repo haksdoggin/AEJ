@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="icon" href="aej.png">
+    <link rel="stylesheet" href="Edrian.css">
+    <title>Edrian Aluan- Personal Website</title>
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>I'm Ed.</h1>
+            <p class="custom">Web Developer &amp; Designer</p>
+            <img src="herta.gif" alt="Herta">
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="ed.jpg" alt="Edrian Aluan" class="about-me-image">
+            <p>I am a aspiring web developer &amp; designer.</p>
+            <div class="flex-container">
+                <img src="hu-tao-unscreen.gif" alt="hu tao" class="second-image" width="100px" height="100px">
+            </div>
+            <p class="p">
+                I love also to take care of my youngest sibling.
+            </p>
+            <p class="p">I want to experience to make a game of my own.</p>
+            <p class="p">I like to play online games and read novels &amp; manhwa online.</p>
+        </div>
+    </section>
+        
+        
+        
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Phyton</li>
+            </ul>
+        </div>
+    </section>
+    <main id="manhwa">
+        <h2>Favorite Manhwas</h2>
+        <div class="favorite-manhwas-container">
+            <div class="favorite-manhwa">
+                <img src="love.jpg" alt="Pure Love Operation" class="manhwa-image">
+                <h3>Pure Love Operation</h3>
+                <button id="Read12">Read</button>
+            </div>
+    
+            <div class="favorite-manhwa">
+                <img src="ORV.jfif" alt="ORV" class="manhwa-image">
+                <h3>Omniscient Reader's Viewpoint</h3>
+                <button id="read1">Read</button>
+            </div>
+    
+            <div class="favorite-manhwa">
+                <img src="good.jfif" alt="The Greatest Estate Designer" class="manhwa-image">
+                <h3>The Greatest Estate Designer</h3>
+                <button id="ReadMore">Read</button>
+            </div>
+        </div>
+    </main>
+    <button id="Home" class="color-home">Home</button>
+    
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const ReadButton = document.getElementById("Read12");
+
+    if (ReadButton) {
+        ReadButton.addEventListener("click", function() {
+            window.location.href = "https://mangabuddy.com/read/pure-love-operation/";
+        });
+    }
+});
+
+
+        
+    </script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const read1Button = document.getElementById("read1");
+
+    if (read1Button) {
+        read1Button.addEventListener("click", function() {
+            window.location.href = "https://chapmanganato.com/manga-iz985608";
+        });
+    }
+});
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const ReadMoreButton = document.getElementById("ReadMore");
+
+    if (ReadMoreButton) {
+        ReadMoreButton.addEventListener("click", function() {
+            window.location.href = "https://chapmanganato.com/manga-mf989614";
+        });
+    }
+});
+
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            
+            const HomeButton=document.getElementById("Home");
+            
+            if(HomeButton){
+                HomeButton.addEventListener("click", function(){
+                    window.location.href="index.html"
+                });
+            }
+        });
+    </script>
+        
+   
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Haksdoggin. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

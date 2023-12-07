@@ -1,0 +1,180 @@
+/* Top Div */
+div.aej {
+    background-color: transparent; /* Set the background color to transparent */
+    height: 400px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+img.aejpic {
+    max-width: 100%;
+    height: 400px;
+}
+
+/* End of Top Div */
+
+/* Mid Div */
+/* Beautiful scale-up and fade-in animation for h1 */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px; /* Add margin above the h1 text */
+    transform: scale(0.8); /* Initial scale set to 0.8 */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: scaleFadeIn 1s ease-out infinite; /* Use the scaleFadeIn animation */
+}
+
+@keyframes scaleFadeIn {
+    to {
+        transform: scale(1); /* Scale back to 1 for a smooth effect */
+        opacity: 1;
+    }
+}
+
+
+
+.midcon {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* Reduced border radius */
+    justify-content: center;
+    padding: 20px; /* Added padding */
+    
+}
+
+.title-container {
+    flex: 1;
+    
+}
+
+img.pic {
+    width: 100%; /* Make the image width responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%;
+    margin: 0 auto; /* Center the image horizontally */
+    border: 4px solid black;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.image-with-text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px; /* Reduced font size */
+    text-align: center;
+    margin-top: 10px; /* Added margin at the top */
+    width: 200px;
+}
+
+/* End of Mid Div */
+
+/* Bot Div */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+button:hover {
+    transform: translateY(-5px); /* Move the button up by 5 pixels on hover */
+}
+/* Jumping effect for each letter in <p> */
+p {
+    font-family: 'Arial';
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+/* End of Bot Div */
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, green 38%, yellow 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+.credits{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; /* Adjust padding as needed */
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.nav-spacer {
+    display: inline-block;
+    width: 30px; /* Adjust width as needed */
+}
+
+img.logo {
+    width: 65px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.nav-right {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.nav-right li {
+    margin-right: 10px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-right input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.read-now {
+    margin-top: 15px; /* Adjust margin as needed */
+    width: 700px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333; /* Set text color */
+    cursor: pointer;
+    display: block; /* Ensure the button takes the full width of its container */
+    margin-left: auto; /* Move the button to the right */
+    margin-right: 15px; /* Add some right margin for spacing */
+}
+
+.readcsm {
+    margin-top: 15px; /* Adjust margin as needed */
+    width: 700px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333; /* Set text color */
+    cursor: pointer;
+    display: block; /* Ensure the button takes the full width of its container */
+    margin-left: auto; /* Move the button to the right */
+    margin-right: 15px; /* Add some right margin for spacing */
+}
+
+
+.star {
+    color: gold; /* Set the color of the stars */
+    font-size: 20px; /* Set the font size of the stars */
+    margin-right: 5px; /* Add some spacing between stars */
+}
+
+
+.manga-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.manga-item {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+.manga-details {
+    flex: 0 0 50%; /* Adjust the percentage as needed */
+    text-align: center;
+}
+
+.manga-item img {
+    margin-top: 25px;
+    max-width: 250%;
+    height: 460px;
+}
+
+/* ... (your existing CSS rules) ... */
+
+.description {
+    flex: 0 0 90%; /* Adjust the percentage as needed */
+    padding: 0 20px;
+    text-align: left; /* Align the container to the left */
+}
+
+/* Add additional styles for the description as needed */
+.description p {
+    text-align: justify; /* Justify the text within the description */
+    /* Your other styles for the description text */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Add your button styling here */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+

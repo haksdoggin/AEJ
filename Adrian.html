@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"   href="C:\Users\edria\Downloads\aej.png">
+    <link rel="stylesheet" href="Adrian.css"/>
+    <title>Adrian Personal Website</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>I'm Adrian.</h1>
+            <p>Web Developer &amp; Designer/Editor</p>
+            
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="adrian.jpg" alt="Adrian Giliw" class="about-me-image">
+            <p>I love watching anime and playing online games also a working student. Most of the time, I'm busy
+            </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Video Editing</li>
+            </ul>
+        </div>
+    </section>
+    <main id="anime">
+        <h2>Top 3 Anime</h2>
+        <div class="favorite-anime-container">
+            <div class="favorite-anime">
+                <img src="soma.jpeg" alt="Food Wars" class="anime-image">
+                <h3>Food wars</h3>
+                
+            </div>
+    
+            <div class="favorite-anime">
+                <img src="luffy.jpe" alt="One Piece" class="anime-image">
+                <h3>One Piece</h3>
+             
+            </div>
+    
+            <div class="favorite-anime">
+                <img src="natsu.webp" alt="Fairy Tail" class="anime-image">
+                <h3>Fairy Tail</h3>
+                
+            </div>
+        </div>
+    </main>
+    <button id="Home" class="color-home">Home</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            
+            const HomeButton=document.getElementById("Home");
+            
+            if(HomeButton){
+                HomeButton.addEventListener("click", function(){
+                    window.location.href="index.html"
+                });
+            }
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Adrian Giliw. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Justin.css">
+    <title> Justin Oliver Gagasa — Personal Website</title>
+    <link rel="icon" href="C:\Users\edria\Downloads\aej.png">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 style="font-family: 'Sacramento', cursive;">I'm Justin.</h1>
+            <p style="color: white;">Web Developer &amp; Designer</p>
+            <img src="miku.gif" alt="Miku">
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="justin.jpg" alt="Justin Oliver" class="about-me-image">
+            <p class="desc" > I'm Justin Oliver Gagasa, 19 years old, residing in Brgy. Tumbaga 2, Sariaya, Quezon. I enjoy reading fantasy novels and manhwa, and although I have a passion for singing, I'm not particularly skilled. As an introverted person, I tend to be quite shy in front of others. </p>
+            <p class="desc2"> The AEJ Group is created by simply incorporating the initials of our names, our logo was made by creating a design with the 3 letters. </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Phyton</li>
+            </ul>
+        </div>
+    </section>
+    <main id="manhwa">
+        <h2>Favorite Manhwas</h2>
+        <div class="favorite-manhwas-container">
+            <div class="favorite-manhwa">
+                <img src="tokyoghoul.jpg" alt="Tokyo Ghoul" class="manhwa-image">
+                <h3> Tokyo Ghoul</h3>
+                <button id="Read12">Read</button>
+            </div>
+    
+            <div class="favorite-manhwa">
+                <img src="horimiya.jpg" alt="Horimiya" class="manhwa-image">
+                <h3> Horimiya </h3>
+                <button id="read1">Read</button>
+            </div>
+    
+            <div class="favorite-manhwa">
+                <img src="sololeveling.jpg" alt="Solo Leveling" class="manhwa-image">
+                <h3> Solo Leveling</h3>
+                <button id="ReadMore">Read</button>
+            </div>
+        </div>
+    </main>
+    
+    <button id="Home" class="color-home">Home</button>
+    
+    
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    const ReadButton = document.getElementById("Read12");
+
+    if (ReadButton) {
+        ReadButton.addEventListener("click", function() {
+            window.location.href = "https://mangabuddy.com/read/pure-love-operation/";
+        });
+    }
+});
+
+
+        
+    </script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const read1Button = document.getElementById("read1");
+
+    if (read1Button) {
+        read1Button.addEventListener("click", function() {
+            window.location.href = "https://chapmanganato.com/manga-od955386";
+        });
+    }
+});
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const ReadMoreButton = document.getElementById("ReadMore");
+
+    if (ReadMoreButton) {
+        ReadMoreButton.addEventListener("click", function() {
+            window.location.href  = "https://chapmanganato.com/manga-dr980474";
+        });
+    }
+});
+
+    </script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        
+        const HomeButton=document.getElementById("Home");
+        
+        if(HomeButton){
+            HomeButton.addEventListener("click", function(){
+                window.location.href="index.html"
+            });
+        }
+    });
+</script>
+      
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Junatan. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
