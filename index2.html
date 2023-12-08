@@ -5,6 +5,7 @@
     <title>Minimalist Manga Reader</title>
     <link rel="icon" href="C:\Users\edria\Downloads\aej.png">
     <link rel="stylesheet" href="style2.css">
+   
 </head>
 <body>
     <header>
@@ -12,15 +13,18 @@
         <nav class="nav-right">
             <a href="index2.html"> Home</a>
             <span class="nav-spacer"> </span>
-            
-
-           
+            <div id="search-container">
+                <label for="searchInput">Search: </label>
+                <input type="text" id="searchInput">
+                <button onclick="performSearch()">Search</button>
+            </div>
         </nav>
     </header>
+
     <main>
         <h1 style="font-size: 55px;"> Developer's Recommendations! </h1>
         
-        <section class="manga-container">
+        <section class="manga-container" id="mangaContainer1">
             <div class="manga-item">
                 <a href="chainsawman.html">
                     <img src="chainsawman.jpg" alt="Manga page 1">
@@ -47,7 +51,7 @@
             </div>
             <!-- Add similar blocks for other manga items -->
         </section>
-        <section class="manga-container">
+        <section class="manga-container" id="mangaContainer2">
             <div class="manga-item">
                 <a href="tokyoghoul.html">
                     <img src="tokyoghoul.jpg" alt="Manga page 1">
@@ -77,25 +81,47 @@
     </main>
     <hr>
     <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3> If you love reading as much as we do. </h3>
-      <p class = "letstalk">Let't talk about our favorite MMMs! </p>
-      <br>
-
-      <a class="button" href="index.html">Developers! </a>
+        <h2>Get In Touch</h2>
+        <h3> If you love reading as much as we do. </h3>
+        <p class="letstalk">Let's talk about our favorite MMMs! </p>
+        <br>
+        <a class="button" href="index.html">Developers! </a>
     </div>
-  </div>
+    <hr>
+    <div class="bottom-container">
+        <br>
+        <a class="footer-link" href="https://www.facebook.com/justinoliver.gagasa">Contact Justin</a>
+        <a class="footer-link" href="https://www.facebook.com/adrian.giliw">Message Adrian</a>
+        <a class="footer-link" href="https://www.facebook.com/DeTeCt123.HAKS">Follow Ed</a>
+        <p class="lastpart">© 2023 Gagasa, Justin Oliver </p>
+        <p class="lastpart">© 2023 Aluan, Edrian N. </p>
+        <p class="lastpart">© 2023 Giliw, Adrian A. </p>
+    </div>
 
-<hr>
-  <div class="bottom-container">
-    <br>
-    <a class="footer-link" href="https://www.facebook.com/justinoliver.gagasa">Facebook</a>
-    <a class="footer-link" href="https://www.facebook.com/adrian.giliw">Facebook</a>
-    <a class="footer-link" href="https://www.facebook.com/DeTeCt123.HAKS">Facebook</a>
-    <p class = "lastpart">© 2023 Gagasa, Justin Oliver </p>
-    <p class = "lastpart">© 2023 Aluan, Edrian N. </p>
-    <p class = "lastpart">© 2023 Giliw, Adrian A. </p>
-  </div>
+    <script>
+        function performSearch() {
+            var searchInput = document.getElementById('searchInput').value.toLowerCase();
+            var mangaContainers = document.querySelectorAll('.manga-container');
     
+            // Loop through manga containers
+            mangaContainers.forEach(function (container) {
+                var mangaItems = container.getElementsByClassName('manga-item');
+    
+                // Loop through manga items to hide/show based on search input
+                for (var i = 0; i < mangaItems.length; i++) {
+                    var mangaTitle = mangaItems[i].getElementsByTagName('h1')[0].textContent.toLowerCase();
+                    var mangaImage = mangaItems[i].getElementsByTagName('img')[0];
+    
+                    if (mangaTitle.includes(searchInput)) {
+                        mangaItems[i].style.display = 'block';
+                        mangaImage.style.width = '200px'; // Adjust the width as needed
+                        mangaImage.style.height = 'auto'; // Adjust the height as needed
+                    } else {
+                        mangaItems[i].style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
