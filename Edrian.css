@@ -229,3 +229,7 @@ button:hover {
 .about-me{
     color: whitesmoke;
 }
+
+audio{
+    display: none;
+}
